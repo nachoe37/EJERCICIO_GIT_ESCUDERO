@@ -1,0 +1,37 @@
+<HTML>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACTIVIDAD GIT</title>
+    </head>
+    <body>
+        <script>
+            let edad= parseInt( prompt ("Coloque su edad por favor"))
+            function mayoriaEdad (edad) {
+             if (edad >= 18){
+                 function comparacion(){
+                     alert ("Sos mayor de edad! Ahora vamos a comparar tu edad con la de otros usuarios")
+                     let edad1= edad
+                     let edad2= parseInt (prompt ("Coloque la edad de un usuario mayor de edad"))
+                     let edad3= parseInt (prompt ("Coloque la edad otro usuario mayor de edad"))
+                     let mayor= Math.max ( edad1, edad2, edad3)
+                     return alert ("El mayor de ustedes es quien tiene: " + mayor)
+                 }
+                 return comparacion()
+             }  else {
+                 return alert ("Eres menor de edad, salia de acá!!")
+             }   
+            }
+            mayoriaEdad (edad)      
+
+
+
+
+
+        </script>
+    </body>
+    </html>
+</HTML>
